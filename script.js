@@ -21,14 +21,13 @@ addItem.addEventListener("click", (event) => {
 
   let name = document.createElement("td");
   name.innerText = itemName.value;
-  name.classList.add("item");
-  name.setAttribute("data-ns-test", nameValue);
+  name.setAttribute("data-ns-test", "item-name");
 
   newRow.append(name);
 
   let price = document.createElement("td");
   price.innerText = itemPrice.value;
-  price.setAttribute("data-ns-test", priceValue);
+  price.setAttribute("data-ns-test", "item-price");
 
   newRow.append(price);
 
