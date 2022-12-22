@@ -1,2 +1,9 @@
+body {
+  margin: 20px;
+  font-family: sans-serif;
+}
 
-/* Your CSS Code here. */
+table {
+  border: 2px solid black;
+  margin: 20px 0;
+}

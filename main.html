@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <!-- the entire body must be written by student -->
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <form action="#">
+      <label for="item-name-input">Name</label>
+      <input
+        type="text"
+        id="item-name-input"
+        placeholder="Chocolate"
+        required
+      />
 
-</body>
+      <label for="item-price-input">Price</label>
+      <input type="number" id="item-price-input" placeholder="100" required />
 
+      <input type="submit" id="add" value="Add" />
+    </form>
+
+    <table role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th id="item" role="columnheader">Name</th>
+          <th id="price" role="columnheader">Price</th>
+        </tr>
+      </thead>
+
+      <tbody role="rowgroup"></tbody>
+    </table>
+
+    <h3 id="total" data-ns-test="grandTotal">0</h3>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
